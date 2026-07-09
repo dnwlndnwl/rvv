@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>doki doki m</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <div id="game-container">
+            <div id="bg-layer"></div>
+            <div id="char-layer">
+                <img id="nina" class="char" src="" alt="" />
+                <img id="seeu" class="char" src="" alt="" />
+            </div>
+            <!-- 비주얼 노벨 UI -->
+            <div id="vn-ui">
+                <div id="speaker"></div>
+                <div id="text-box"></div>
+            </div>
+            <!-- 리듬게임 UI -->
+            <div id="rhythm-ui" style="display: none">
+                <canvas id="game-canvas"></canvas>
+                <div id="hud">
+                    <div id="combo">0</div>
+                    <div id="judge">READY</div>
+                </div>
+            </div>
+        </div>
+        <script src="rhythm.js"></script>
+        <script src="renderer.js"></script>
+    </body>
+</html>
